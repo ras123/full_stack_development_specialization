@@ -3,11 +3,11 @@
     </head>
     <body>
         <h1>Please Enter Your Details For Our Dating Website!</h1>
-        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+        <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get"><!-- enctype="multipart/form-data">-->
             <fieldset>
                 <legend>Your Face</legend>
-                <label for="avatar">Your image: </label>
-                <input type="file" id="avatar" name="avatar" required><br>
+                <!--<label for="avatar">Your image: </label>
+                <input type="file" id="avatar" name="avatar" required><br>-->
 
                 <label>Image preview: </label>
                 <img id="preview">
@@ -31,13 +31,13 @@
                 <input type="color" id="color" name="color"><br>
 
                 <label for="country">Which country: </label>
-                <select id="country">
-                    <option name="country" value="no_selection">no selection</option>
-                    <option name="country" value="Canada">Canada</option>
-                    <option name="country" value="Germany">Germany</option>
-                    <option name="country" value="France">France</option>
-                    <option name="country" value="Slovakia">Slovakia</option>
-                    <option name="country" value="Taiwan">Taiwan</option>
+                <select id="country" name="country">
+                    <option value="no_selection">no selection</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Taiwan">Taiwan</option>
                 </select>
             </fieldset>
             <fieldset>
